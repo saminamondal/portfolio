@@ -15,6 +15,12 @@ p    {color: red;}
 <body background="panda.jpeg">
 
 <h1>Hello world!</h1>
+  
+  var paragraphs = document.getElementsByTagName("p");
+for (var i = 0; i < paragraphs.length; i++) {
+  var paragraph = paragraphs.item(i);
+  paragraph.style.setProperty("color", "white", null);
+}
 
 
 
